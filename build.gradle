@@ -27,6 +27,10 @@ allprojects {
 
 apply plugin: 'com.android.library'
 
+artifacts {
+    archives file('openim.aar')
+}
+
 dependencies {
     compile fileTree(dir: 'libs', include: '*.jar')
 }
